@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>兑换商城</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script type="text/javascript">
+        function setHtmlWidth(){document.querySelector("html").style.fontSize = (window.innerWidth*100/640) + "px";}
+        setHtmlWidth();window.onresize = setHtmlWidth;
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="../../Public/Res-manage/js/jquery-1.11.min.js"></script>
+</head>
+<body>
+
+<div class="page" id="p_exchange_list">
+    <div class="max_width">
+        <div class="content clearfix">
+            <div class="banner">
+                <img src="images/banner1.jpg" alt=""/>
+            </div>
+            <div class="detailcon d1">
+                <div class="ti">移动20元充值</div>
+                <p class="tides">消耗金币：200<br>抢兑时间：全天</p>
+            </div>
+            <div class="line"></div>
+            <div class="detailcon">
+                <p class="con c1">
+                    今日限量：<span class="num">20</span><br>
+                    活动时间：2015-05-15至2015-05-25<br>
+                </p>
+                <p class="con c2">
+                    <span class="ti">兑换流程:</span><br>
+                    1.用户点击兑换即可兑换此奖品。<br>
+                    2.中奖用户可在宝库里查询。<br>
+                    3.今日超市特价工作人员在活动结束后3个工作日内发放。
+                </p>
+            </div>
+            <div class="open">弹框</div>
+            <a class="btn btn_exchange" href="down.html">兑换</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal_bg"></div>
+<div class="dlg dlg_alert">
+    <div class="conw">
+        <p class="ti">提示</p>
+        <p class="con">请输入手机号码</p>
+        <a class="btn btn_close" href="">确定</a>
+    </div>
+</div>
+
+<script>
+    function showAlert(msg){
+        $(".modal_bg").addClass("show");
+        var dlg = $(".dlg_alert");
+        dlg.find(".con").html(msg);
+        var top = $(window).scrollTop()+ (window.innerHeight - dlg.height())/2;
+        dlg.css({top:top+"px"}).addClass("show");
+    }
+    function hideAlert(msg){
+        $(".dlg_alert").removeClass("show");
+        $(".modal_bg").removeClass("show");
+    }
+    //document ready
+    $(function(){
+
+        $(".open").click(function(){
+            showAlert("作人员在活");
+        });
+
+        $(".dlg_alert .btn_close").click(function(e){
+            e.preventDefault();
+            hideAlert();
+        });
+    });
+</script>
+
+
+</body>
+</html>

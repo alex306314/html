@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>百万计划</title>
+    <meta name="format-detection" content="telephone=no"/>  
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" name="viewport">
+    <script type="text/javascript">!function(e){function t(){document.querySelector("html").style.fontSize=html_font_size+"px"}var n=navigator.userAgent.match(/(Android)/i),i=document.querySelector("meta[name=viewport]"),a=!!i,i=a?i:document.createElement("meta"),o="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no";window.html_font_size=n?100:100*window.innerWidth/e,i.setAttribute("content",o),a||(i.setAttribute("name","viewport"),document.getElementsByTagName("head")[0].appendChild(i)),n?(o="target-densitydpi=320,width="+e+",user-scalable=no",i.setAttribute("content",o)):(t(),window.onresize=t)}(640);</script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="http://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+</head>
+<body style="background:#fddd9a">
+<div class="wrap pmoney clearfix">
+   <div class="max_width">
+        <div class="imgbg">
+            <img class="topban t1" src="images/rrl_newt.jpg">
+            <img class="topban t2" src="images/rrl_newb.jpg">
+        </div>
+        <div class="imgmask"></div>
+        <div class="moneytxt">
+            <p class="p1">100元</p>
+            <p class="p2">已放入今日超市特价账户</p>
+            <p class="p3">13312121210</p>
+            <p class="p4">登录今日超市特价“宝库”查看</p>
+        </div>
+        <a class="btn btn_fanli" href="index1.html">立即返利</a>
+        <a class="btn btn_hanpeng">喊朋友来抢钱</a>
+        <ul class="joinrules">
+            <li class="ti">参与方式:</li>
+            <li><span class="idx">1.</span>您所抢红包现金已存放入“今日超市特价”APP零钱包中。</li>
+            <li><span class="idx">2.</span>点击“立即返利”下载“今日超市特价”APP。</li>
+            <li><span class="idx">3.</span>登录注册后，在宝库>>零钱中查看、提现。</li>
+            <li><span class="idx">4.</span>咨询电话：010-67500891。</li>
+        </ul>
+        <div class="clear" style="height:1rem;"></div>
+        <div class="clear line"></div>
+        <p class="botx">本活动最终解释权归今日超市特价所有</p>
+   </div>   
+
+</div>
+
+<div class="modal_bg"></div>
+<div class="dlg_invite">
+    <img src="images/pointer.png" alt=""/>
+    <p>点击右上角，选择[分享到朋友圈]</p>
+    <a class="btn btn_know" href="">我知道了</a>
+</div>
+
+<div class="dlg dlg_alert">
+    <div class="conw">
+        <p class="ti">提示</p>
+        <p class="con">请输入手机号码</p>
+        <a class="btn btn_close" href="">确定</a>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+    function showAlert(msg){
+        $(".modal_bg").addClass("show");
+        var dlg = $(".dlg_alert");
+        dlg.find(".con").html(msg);
+        var top = $(window).scrollTop()+ (window.innerHeight - dlg.height())/2;
+        dlg.css({top:top+"px"}).addClass("show");
+    }
+    function hideAlert(msg){
+        $(".dlg_alert").removeClass("show");
+        $(".modal_bg").removeClass("show");
+    }
+
+
+
+    //喊朋友来抢钱
+    $(".btn_hanpeng").click(function(e){
+        e.preventDefault();
+        $(".modal_bg").addClass("show");
+        $(".dlg_invite").addClass("show");
+    });
+    $(".btn_know").click(function(e){
+        e.preventDefault();
+        $(".modal_bg").removeClass("show");
+        $(".dlg_invite").removeClass("show");
+    });
+})
+</script>
+
+</body>
+</html>

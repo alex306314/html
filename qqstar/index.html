@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>兑换商城</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script type="text/javascript">
+        function setHtmlWidth(){document.querySelector("html").style.fontSize = (window.innerWidth*100/640) + "px";}
+        setHtmlWidth();window.onresize = setHtmlWidth;
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="../../Public/Res-manage/js/jquery-1.11.min.js"></script>
+    <script src="js/qqstar.js?a=3"></script>
+</head>
+<body>
+
+<div class="page">
+    <div class="max_width">
+        <img src="images/p1bg.jpg" alt="" class="pagebg"/>
+        <form method="get" action="detail.html" id="frm_qian">
+            <div class="pagecon">
+                <p class="iptdes">请输入手机号，抢伊利QQ星<span>5</span>元返利券</p>
+                <input class="ipt_mobile" type="tel" id="phone" placeholder="请输入手机号"  maxlength="11"
+                       data-empty="请输入手机号" data-phone-err="请输入正确格式的手机号" name="phone"
+                        value="18049147004"/>
+                <a class="btn btn_nowget" href=""><img src="images/bar_anniu@2x.png" alt="立即抢钱"/></a>
+                <div class="pbotm">
+                    <a class="p p1 btn_rules" href="">活动规则<span>&gt;&gt;</span></a>
+                    <p class="p p2">客服电话：010-67500891</p>
+                    <p class="p p3">拍超市购物小票，拿现金返利</p>
+                </div>
+            </div>
+            <input type="hidden" value="{$id_member}" name="id_member">
+        </form>
+    </div>
+</div>
+
+<div class="modal_bg"></div>
+<div class="dlg dlg_rules ">
+    <div class="conw">
+        <p class="ti">活动规则</p>
+        <p class="con">
+            <br>
+            【活动须知】<br>
+            每个手机号限抢现金返利一次。<br><br>
+            【注意事项】<br>
+            1.活动现金返利可以通过今日超市特价app提现。<br>
+            2.活动现金返利不可转让。<br>
+            3.严厉打击包括但不限于恶意套现、机器作弊等违规行为，一经发现，将取消领取的现金返利，并有权撤销相关违规交易且赔偿处罚。<br>
+            4.本活动最终解释权归今日超市特价所有。
+        </p>
+        <a class="btn btn_close" href="">关闭</a>
+    </div>
+</div>
+
+<div class="dlg dlg_alert">
+    <div class="conw">
+        <p class="ti">提示</p>
+        <p class="con">请输入手机号码</p>
+        <a class="btn btn_close" href="">确定</a>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,351 @@
+/*css reset*/
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 0.12rem;
+  font-family: "微软雅黑";
+  font-weight: normal;
+  overflow-x: hidden;
+  background: #fafafa;
+}
+body,
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+form,
+textarea,
+input {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+ul,
+ol,
+input {
+  padding: 0;
+}
+table {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+a img {
+  border: 0;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+img {
+  max-width: 100%;
+}
+.max_width {
+  width: 11.70rem;
+  margin: 0 auto;
+  position: relative;
+}
+.clear {
+  width: 100%;
+  height: 0;
+  clear: both;
+}
+.clear100 {
+  height: 1rem;
+}
+.clear140 {
+  height: 1.40rem;
+}
+.clearfix {
+  zoom: 1;
+}
+.wrap {
+  width: 100%;
+}
+.blk {
+  width: 100%;
+  clear: both;
+  position: relative;
+}
+.banner {
+  background: url(../images/bg_top.jpg) repeat-x center 0 transparent;
+  background-size: cover;
+  height: 7.90rem;
+}
+.banner .max_width {
+  height: 7.90rem;
+}
+.banner .img1 {
+  display: block;
+  position: absolute;
+  width: 5.77rem;
+  height: 6.87rem;
+  bottom: 0;
+  left: -0.15rem;
+}
+.banner .img2 {
+  display: block;
+  position: absolute;
+  width: 3.82rem;
+  height: 2.87rem;
+  top: 1.52rem;
+  right: 1.02rem;
+}
+.banner .btn {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  width: 1.49rem;
+  height: 0.55rem;
+  bottom: 1.71rem;
+  right: 1.16rem;
+}
+.banner .b1 {
+  right: 3.24rem;
+}
+.blkti {
+  width: 3.96rem;
+  height: 0.47rem;
+  font-size: 0.28rem;
+  line-height: 0.47rem;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "黑体";
+  position: relative;
+  color: #282528;
+}
+.shortline {
+  position: absolute;
+  width: 0.60rem;
+  height: 1px;
+  top: 0.21rem;
+  background: #b7babe;
+}
+.shortline.ll {
+  left: -0.6rem;
+}
+.shortline.lr {
+  right: -0.6rem;
+}
+.blkdes {
+  display: block;
+  font-size: 0.18rem;
+  text-align: center;
+  color: #282528;
+  margin: 0.72rem 0.2rem 1.23rem 0.2rem;
+}
+.slide {
+  height: 4.69rem;
+  width: 9.86rem;
+  margin: 0 auto;
+  position: relative;
+}
+.slide .conin {
+  height: 4.80rem;
+  width: 50.00rem;
+  position: relative;
+  left: -3.62rem;
+}
+.slide .con {
+  position: relative;
+  height: 4.69rem;
+  width: 100%;
+  overflow: hidden;
+}
+.slide .img {
+  display: block;
+  width: 2.64rem;
+  height: 4.68rem;
+  float: left;
+  margin-right: 0.98rem;
+}
+.slide .ctl {
+  position: absolute;
+  width: 0.51rem;
+  height: 4.68rem;
+  top: 0;
+  cursor: pointer;
+}
+.slide .ctl img {
+  margin-top: 1.75rem;
+}
+.slide .ctll {
+  left: -0.93rem;
+}
+.slide .ctlr {
+  right: -0.93rem;
+  text-align: right;
+}
+.bgred {
+  height: 7.00rem;
+  width: 100%;
+  margin-top: 0.43rem;
+}
+.copcon {
+  position: relative;
+  width: 100%;
+  height: 3.63rem;
+}
+.copcon .cir {
+  position: absolute;
+  width: 2.15rem;
+  height: 2.15rem;
+  top: 0.65rem;
+}
+.copcon .cir.c1 {
+  left: 0.97rem;
+}
+.copcon .cir.c2 {
+  right: 0.97rem;
+}
+.copcon .ti {
+  display: block;
+  position: absolute;
+  width: 100%;
+  font-size: 0.24rem;
+  left: 0;
+  bottom: -0.73rem;
+  text-align: center;
+  color: #313131;
+}
+.copcon .phone {
+  width: 1.44rem;
+  height: 3.04rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -0.72rem;
+}
+.copcon .phone .ti {
+  bottom: -0.49rem;
+  width: 3rem;
+  left: -0.8rem;
+}
+.copcon .br {
+  display: block;
+  position: absolute;
+  width: 0.88rem;
+  height: 0.57rem ;
+  top: 1.51rem;
+}
+.copcon .br.br1 {
+  left: 3.70rem;
+}
+.copcon .br.br2 {
+  right: 3.70rem;
+}
+.contact {
+  position: relative;
+  background: white;
+}
+.contact .con {
+  position: relative;
+  height: 1.74rem;
+}
+.contact img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 2.06rem;
+  height: 1.74rem;
+  width: 2.40rem;
+}
+.contact .mo {
+  display: block;
+  position: absolute;
+  left: 5.10rem;
+  width: 6.00rem;
+  font-size: 0.24rem;
+  color: #282528;
+  line-height: 0.47rem;
+  top: 0.35rem;
+}
+.footer {
+  text-align: center;
+  width: 100%;
+  height: 0.56rem;
+  line-height: 0.56rem;
+  padding-top: 0.90rem;
+  font-size: 0.16rem;
+  color: #303030;
+  background: white;
+}
+.fixcode {
+  display: none;
+  width: 1.18rem;
+  height: 1.51rem;
+  position: fixed;
+  right: 0.30rem;
+  bottom: 0.30rem;
+  background: white;
+  border-radius: 0.10rem;
+  border: 1px solid #eaeaea;
+}
+.fixcode img {
+  margin: 0.16rem 0 0 0.14rem;
+  width: 0.93rem;
+  height: 0.93rem;
+}
+.fixcode p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 0.36rem;
+  line-height: 0.36rem;
+  font-size: 0.16rem;
+  color: #393939;
+}
+.fixcode .btn {
+  position: absolute;
+  right: 0.01rem;
+  top: 0.03rem;
+  cursor: pointer;
+  width: 0.13rem;
+  height: 0.13rem;
+  line-height: 0.13rem;
+  font-size: 0.12rem;
+  color: #333;
+  display: none;
+}
+.fixcode .btn:hover {
+  color: red;
+}
+.fixcode.hover .h {
+  display: block;
+}
+.fixcode.hide {
+  overflow: hidden;
+  cursor: pointer;
+  border: 0;
+}
+.fixcode.hide .h {
+  display: none;
+}
+.fixcode.hide .s {
+  display: none;
+}
+.fixcode.hide img {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: -0.33rem;
+  left: -0.33rem;
+}
+.emw {
+  width: 11.70rem;
+  height: 7.00rem;
+  margin: 0 auto;
+}

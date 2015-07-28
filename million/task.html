@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>任务进度</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script type="text/javascript">
+        var init_width = 640, isAndroid=navigator.userAgent.match(/(Android)/i),
+        html_font_size = isAndroid?100:window.innerWidth*100/init_width;
+        function setHtmlWidth(){document.querySelector("html").style.fontSize = html_font_size + "px";}
+        if (isAndroid) {
+            document.querySelector("meta[name=viewport]").setAttribute("content","target-densitydpi=320,width="+init_width+",user-scalable=no");
+        }else{setHtmlWidth();window.onresize = setHtmlWidth;}
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/million.css" />
+    <script src="http://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/million.js"></script>
+</head>
+<body>
+<div class="wrap clearfix">
+   <div class="max_width">
+        <img src="images/sample_avatar.jpg" class="avatar">
+        <p class="totalm">本周获得奖励：<span class="red">¥50</span></p>
+
+        <div class="prow register_num">
+            <input type="hidden" class="reg_num ipt1" value="20" data-options="{'a':1,'time':800}">
+            <div class="ren">(人数)</div>
+            <div class="pbg">
+                <div class="num n1 nt">0</div>
+                <div class="num n1 nb">￥0</div>
+                <div class="num n2 nt">10</div>
+                <div class="num n2 nb">￥20</div>
+                <div class="num n3 nt">20</div>
+                <div class="num n3 nb">￥40</div>
+                <div class="num n4 nt">30</div>
+                <div class="num n4 nb">￥60</div>
+                <div class="num n5 nt">40</div>
+                <div class="num n5 nb">￥80</div>
+                <div class="num n6 nt">50</div>
+                <div class="num n6 nb">￥100</div>
+                <div class="vv v1"></div>
+                <div class="vv v2"></div>
+                <div class="vv v3"></div>
+                <div class="vv v4"></div>
+                <div class="pfg"></div>
+            </div>
+            <div class="ti">本周注册人数进度</div>
+        </div>  
+        <div class="prow register_first">
+            <input type="hidden" class="reg_num ipt2" value="50" 
+                data-options="{'a':1}" >
+            <div class="ren">(人数)</div>
+            <div class="pbg">
+                <div class="num n1 nt">0</div>
+                <div class="num n1 nb">￥0</div>
+                <div class="num n2 nt">10</div>
+                <div class="num n2 nb">￥30</div>
+                <div class="num n3 nt">20</div>
+                <div class="num n3 nb">￥60</div>
+                <div class="num n4 nt">30</div>
+                <div class="num n4 nb">￥90</div>
+                <div class="num n5 nt">40</div>
+                <div class="num n5 nb">￥120</div>
+                <div class="num n6 nt">50</div>
+                <div class="num n6 nb">￥200</div>
+                <div class="vv v1"></div>
+                <div class="vv v2"></div>
+                <div class="vv v3"></div>
+                <div class="vv v4"></div>
+                <div class="pfg"></div>
+            </div>
+            <div class="ti">本周首次返利进度</div>
+        </div>  
+
+        <div class="clear bgline"></div>
+        <div class="cirww">
+            
+            <div class="cirw circle_canvas cr" >
+                <input type="hidden" class="reg_num n1" value="6" data-options="{'a':1,'bgcolor':'#eeeeee','color':'#fb7468'}">
+                <div class="ti">距注册奖励40元</div>
+                <div class="circle c1">
+                    <div class="num">还需6人</div>
+                    <div class="innerc"></div>
+                    <img src="images/canto.png" class="canto">
+                </div>
+            </div>
+            <div class="cirw circle_canvas cy" >
+                <input type="hidden" class="reg_num n2" value="3" data-options="{'a':1,'color':'#ffb10b','bgcolor':'#eeeeee'}">
+                <div class="ti">距首次返利奖励30元</div>
+                <div class="circle c2">
+                    <div class="num">还需3人</div>
+                    <div class="innerc"></div>
+                    <img src="images/canto.png" class="canto">
+                </div>
+            </div>
+        </div>
+        
+   </div>   
+
+</div>
+
+<a href="index.html" style="position:relative;top:3.8rem;margin:0.2rem;padding-bottom:0.3rem;font-size:0.3rem;">测试用 可以删除返回index</a>
+
+</body>
+</html>

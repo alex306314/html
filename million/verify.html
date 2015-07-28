@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>百万计划</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <script type="text/javascript">
+        var init_width = 640, isAndroid=navigator.userAgent.match(/(Android)/i),
+        html_font_size = isAndroid?100:window.innerWidth*100/init_width;
+        function setHtmlWidth(){document.querySelector("html").style.fontSize = html_font_size + "px";}
+        if (isAndroid) {
+            document.querySelector("meta[name=viewport]").setAttribute("content","target-densitydpi=320,width="+init_width+",user-scalable=no");
+        }else{setHtmlWidth();window.onresize = setHtmlWidth;}
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/million.css" />
+    <script src="http://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/million.js"></script>
+</head>
+<body>
+<div class="wrap clearfix">
+   <div class="max_width">
+        
+        <div class="iptw">
+            <p class="ipttx">请输入8位邀请码：</p>
+            <input type="text" class="ipt_mobile" placeholder="邀请码">
+            <input class="btn btn_verify btn_red" value="立即验证">
+            <a class="btn btn_verify btn_red" href="index.html">立即验证</a>
+            <a class="btn btn_verify_cancel btn_red" href="task.html">放弃验证</a>
+        </div>
+        <div class="clear veriline"></div>
+        <p class="verify_des">
+验证说明：<br>
+1.只能验证一位好友；<br>
+2.请完整正确输入邀请您的好友邀请码；<br>
+3.请注册登录后第一时间验证好友邀请；<br>
+4.如果无好友邀请，请点击放弃验证；<br>
+5.此活动最终解释权归今日超市特价所有。
+        </p>
+
+   </div>   
+
+</div>
+
+<div class="dlgbg"></div>
+<div class="dlg dlg_join_suc dlg_verify_suc">
+    <div class="close" data-href="1"></div>
+    <img src="images/dlg_top1.png" class="ti">
+    <div class="imgb">
+        <div class="dlgc">恭喜您！验证成功</div>
+        <a class="btn btn_yellow btn_iknow">确&nbsp;&nbsp;&nbsp;定</a>
+    </div>
+</div>
+
+<div class="dlg dlg_join_suc dlg_verify_cancel">
+    <div class="close" ></div>
+    <img src="images/dlg_top1.png" class="ti">
+    <div class="imgb">
+        <div class="dlgc">确定要放弃验证吗？</div>
+        <a class="btn btn_yellow btn_iknow1" href="code.html">确定</a>
+        <a class="btn btn_yellow btn_iknow2">取消</a>
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

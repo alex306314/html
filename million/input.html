@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>百万计划-分享页面</title>
+    <meta name="format-detection" content="telephone=no"/>  
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" name="viewport">
+    <script type="text/javascript">!function(e){function t(){document.querySelector("html").style.fontSize=html_font_size+"px"}var n=navigator.userAgent.match(/(Android)/i),i=document.querySelector("meta[name=viewport]"),a=!!i,i=a?i:document.createElement("meta"),o="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no";window.html_font_size=n?100:100*window.innerWidth/e,i.setAttribute("content",o),a||(i.setAttribute("name","viewport"),document.getElementsByTagName("head")[0].appendChild(i)),n?(o="target-densitydpi=320,width="+e+",user-scalable=no",i.setAttribute("content",o)):(t(),window.onresize=t)}(640);</script>
+    <link rel="stylesheet" type="text/css" href="css/million.css" />
+    <script src="http://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+    <style type="text/css">
+        .shbanner{display: block;}
+        .con{position: absolute;width:100%;left:0;top:4.28rem;z-index: 200;padding-top:0.3rem}
+        .bg{position: absolute;width:100%;left:0;top:4.54rem;height:7rem;
+            background:url(images/sharebg.jpg) repeat-y center 0 transparent;background-size: contain
+        }
+        .lab{display: block;float:left;font-size: 0.25rem;width:1.5rem;margin-left:0.15rem;height:0.7rem;line-height: 0.7rem;color:white; text-align: right;padding-right: 0.1rem;}
+        .ipt_mobile{width:5rem;margin:0;padding:0.2rem 0.16rem;margin:0 auto;}
+        .form_control{margin-top:0.5rem;}
+        .btn_red{background: #F6BA02;margin-top: 0.5rem;color:#764a40;width:5.35rem;height:0.85rem;line-height: 0.85rem;font-size: 0.4rem;}
+    </style>
+</head>
+<body>
+<div class="wrap clearfix">
+   <div class="max_width">
+    <img src="images/shban.jpg" class="shbanner">
+    <div class="con">
+        <form action="" method="post">
+
+            <div class="form_control clearfix">
+                <!-- <span class="lab">手机号码:</span> -->
+                <input class="ipt_mobile ipt_mobile1" type="tel" placeholder="请输入手机号码">
+            </div>
+            <div class="form_control clearfix">
+                <!-- <span class="lab">优惠券编码:</span> -->
+                <input class="ipt_code ipt_mobile" type="text" placeholder="请输入优惠券编码">
+            </div>
+            <input class="btn btn_verify btn_red" type="submit" value="验证">
+        </form>
+    </div>
+    <div class="bg" id="bg"></div>
+   </div>   
+
+</div>
+
+<div class="dlgbg"></div>
+<div class="dlg dlg_join_suc dlg_verify_suc">
+    <div class="close" data-href="1"></div>
+    <img src="images/dlg_top1.png" class="ti">
+    <div class="imgb">
+        <div class="dlgc">恭喜您！验证成功</div>
+        <a class="btn btn_yellow btn_iknow">确&nbsp;&nbsp;&nbsp;定</a>
+    </div>
+</div>
+
+<div class="dlg dlg_join_suc dlg_verify_cancel">
+    <div class="close" ></div>
+    <img src="images/dlg_top1.png" class="ti">
+    <div class="imgb">
+        <div class="dlgc">确定要放弃验证吗？</div>
+        <a class="btn btn_yellow btn_iknow1" href="code.html">确定</a>
+        <a class="btn btn_yellow btn_iknow2">取消</a>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+(function(){
+    function $m(id){return document.getElementById(id)}
+    function style(id, options){
+        var dom = $m(id);
+        for(var i in options){
+            dom.style[i] = options[i];
+        }
+        return dom;
+    }
+    function showyknow(){
+        $('.dlgbg').addClass("show");
+        var top = (window.innerHeight - $(".dlg_verify_cancel").height())/2;
+        top = top<0?0:top;
+        $(".dlg_verify_cancel").css({
+          top:top + "px"
+        }).addClass("show");
+      }
+      function hideknow(){
+        $('.dlgbg').removeClass("show");
+        $(".dlg_join_suc").removeClass("show");
+      }
+      function showAlert(msg){
+        if(typeof(msg)!=undefined){
+            $(".dlg_verify_suc .dlgc").html(msg);
+        }
+        $('.dlgbg').addClass("show");
+        var top = (window.innerHeight - $(".dlg_verify_suc").height())/2;
+        top = top<0?0:top;
+        $(".dlg_verify_suc").css({
+          top:top + "px"
+        }).addClass("show");
+      }
+      $(".close").click(function(){
+        hideknow();
+      });
+      $(".btn_iknow").click(function(){
+        hideknow();  
+      });
+
+    $m("bg").style.height = window.innerHeight - 4.54*html_font_size + "px";
+    //验证按钮
+    $(".btn_verify").click(function(e){
+        e.preventDefault();
+        var mobile = $(".ipt_mobile1").val();
+        var code = $(".ipt_code").val();
+        if(mobile==""){
+            showAlert("手机号不能为空");
+        }
+        
+    });
+
+})();
+
+</script>
+</body>
+</html>

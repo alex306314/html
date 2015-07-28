@@ -1,0 +1,342 @@
+/*css reset*/
+html {
+  font-size: 100px;
+}
+body {
+  font-size: 12px;
+  font-family: "微软雅黑";
+  font-weight: normal;
+  overflow-x: hidden;
+  background: #fafafa;
+}
+body,
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+form,
+textarea,
+input {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+ul,
+ol,
+input {
+  padding: 0;
+}
+table {
+  margin: 0 auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+a img {
+  border: 0;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+.max_width {
+  width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+.clear {
+  width: 100%;
+  height: 0;
+  clear: both;
+}
+.clear100 {
+  height: 100px;
+}
+.clear140 {
+  height: 140px;
+}
+.clearfix {
+  zoom: 1;
+}
+.wrap {
+  width: 100%;
+}
+.blk {
+  width: 100%;
+  clear: both;
+  position: relative;
+}
+.banner {
+  background: url(../images/bg_top.jpg) repeat-x center 0px transparent;
+  height: 790px;
+}
+.banner .max_width {
+  height: 790px;
+}
+.banner .img1 {
+  display: block;
+  position: absolute;
+  width: 577px;
+  height: 687px;
+  bottom: 0;
+  left: -15px;
+}
+.banner .img2 {
+  display: block;
+  position: absolute;
+  width: 382px;
+  height: 287px;
+  top: 152px;
+  right: 102px;
+}
+.banner .btn {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  width: 149px;
+  height: 55px;
+  bottom: 171px;
+  right: 116px;
+}
+.banner .b1 {
+  right: 324px;
+}
+.emw {
+  width: 1170px;
+  height: 700px;
+  margin: 0 auto;
+}
+.blkti {
+  width: 396px;
+  height: 47px;
+  font-size: 28px;
+  line-height: 47px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "黑体";
+  position: relative;
+  color: #282528;
+}
+.shortline {
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  top: 21px;
+  background: #b7babe;
+}
+.shortline.ll {
+  left: -60px;
+}
+.shortline.lr {
+  right: -60px;
+}
+.blkdes {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  color: #282528;
+  margin: 72px 0 123px 0;
+}
+.slide {
+  height: 469px;
+  width: 986px;
+  margin: 0 auto;
+  position: relative;
+}
+.slide .conin {
+  height: 480px;
+  width: 5000px;
+  position: relative;
+  left: -362px;
+}
+.slide .con {
+  position: relative;
+  height: 469px;
+  width: 100%;
+  overflow: hidden;
+}
+.slide .img {
+  display: block;
+  width: 264px;
+  height: 468px;
+  float: left;
+  margin-right: 98px;
+}
+.slide .ctl {
+  position: absolute;
+  width: 51px;
+  height: 468px;
+  top: 0;
+  cursor: pointer;
+}
+.slide .ctl img {
+  margin-top: 175px;
+}
+.slide .ctll {
+  left: -93px;
+}
+.slide .ctlr {
+  right: -93px;
+  text-align: right;
+}
+.bgred {
+  height: 700px;
+  width: 100%;
+  margin-top: 43px;
+}
+.copcon {
+  position: relative;
+  width: 100%;
+  height: 363px;
+}
+.copcon .cir {
+  position: absolute;
+  width: 215px;
+  height: 215px;
+  top: 65px;
+}
+.copcon .cir.c1 {
+  left: 97px;
+}
+.copcon .cir.c2 {
+  right: 97px;
+}
+.copcon .ti {
+  display: block;
+  position: absolute;
+  width: 100%;
+  font-size: 24px;
+  left: 0;
+  bottom: -73px;
+  text-align: center;
+  color: #313131;
+}
+.copcon .phone {
+  width: 144px;
+  height: 304px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -72px;
+}
+.copcon .phone .ti {
+  bottom: -49px;
+}
+.copcon .br {
+  display: block;
+  position: absolute;
+  width: 88px;
+  height: 57px ;
+  top: 151px;
+}
+.copcon .br.br1 {
+  left: 370px;
+}
+.copcon .br.br2 {
+  right: 370px;
+}
+.contact {
+  position: relative;
+  background: white;
+}
+.contact .con {
+  position: relative;
+  height: 174px;
+}
+.contact img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 206px;
+  height: 174px;
+  width: 240px;
+}
+.contact .mo {
+  display: block;
+  position: absolute;
+  left: 510px;
+  width: 600px;
+  font-size: 24px;
+  color: #282528;
+  line-height: 47px;
+  top: 35px;
+}
+.footer {
+  text-align: center;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  padding-top: 90px;
+  font-size: 16px;
+  color: #303030;
+  background: white;
+}
+.fixcode {
+  width: 118px;
+  height: 151px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+}
+.fixcode img {
+  margin: 16px 0 0 14px;
+}
+.fixcode p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  color: #393939;
+}
+.fixcode .btn {
+  position: absolute;
+  right: 1px;
+  top: 3px;
+  cursor: pointer;
+  width: 13px;
+  height: 13px;
+  line-height: 13px;
+  font-size: 12px;
+  color: #333;
+  display: none;
+}
+.fixcode .btn:hover {
+  color: red;
+}
+.fixcode.hover .h {
+  display: block;
+}
+.fixcode.hide {
+  overflow: hidden;
+  cursor: pointer;
+  border: 0;
+}
+.fixcode.hide .h {
+  display: none;
+}
+.fixcode.hide .s {
+  display: none;
+}
+.fixcode.hide img {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: -33px;
+  left: -33px;
+}

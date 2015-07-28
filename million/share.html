@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>百万计划-分享页面</title>
+    <meta name="format-detection" content="telephone=no"/>  
+    <meta content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" name="viewport">
+    <script type="text/javascript">!function(e){function t(){document.querySelector("html").style.fontSize=html_font_size+"px"}var n=navigator.userAgent.match(/(Android)/i),i=document.querySelector("meta[name=viewport]"),a=!!i,i=a?i:document.createElement("meta"),o="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no";window.html_font_size=n?100:100*window.innerWidth/e,i.setAttribute("content",o),a||(i.setAttribute("name","viewport"),document.getElementsByTagName("head")[0].appendChild(i)),n?(o="target-densitydpi=320,width="+e+",user-scalable=no",i.setAttribute("content",o)):(t(),window.onresize=t)}(640);</script>
+    <style type="text/css">
+        html{font-size:100px}
+        body{font-size: 0.12rem;font-family: "微软雅黑","宋体","arial";font-weight: normal;overflow-x: hidden;background: #f04251;}
+        body, ul, ol, p, h1, h2, h3, h4, h5, h6, dl, dt, dd ,form ,textarea ,input{margin:0;}
+        a img{border:0;}
+        .clearfix:after {content: " ";display: block;clear: both;height: 0;}
+        img{width:100%;}
+        .max_width{width:6.4rem;margin:0 auto;position: relative;}
+        .clear{width:100%;height:0;clear:both;}
+        .clearfix {zoom: 1;}
+        img,object,audio,vedio{max-width: 100%;}
+        a{text-decoration: none;}
+        .shbanner{display: block;}
+        .txt{font-size: 0.36rem;color:white;font-family: "黑体";line-height: 0.63rem;margin:0.1rem 0.3rem 0 0.3rem;display: block;width:5.8rem;}
+        .code{display: block;font-size: 0.4rem;color:white;text-align: center;margin-top:1.2rem;}
+        .btn_down{text-align: center;width:5.6rem;height:0.72rem;line-height: 0.72rem;font-size: 0.34rem;color:white;background: #f4881c;border-radius: 0.08rem;-webkit-border-radius: 0.08rem;margin:0.5rem auto 0rem auto;display: block; }
+        .btn_down:visited,.btn_down:hover{color:white;background: #f4881c;}
+        .con{position: absolute;width:100%;left:0;top:4.28rem;z-index: 200}
+        .bg{position: absolute;width:100%;left:0;top:4.54rem;height:7rem;
+            background:url(images/sharebg.jpg) repeat-y center 0 transparent;background-size: contain
+        }
+    </style>
+</head>
+<body>
+<div class="wrap clearfix">
+   <div class="max_width">
+            <img src="images/shban.jpg" class="shbanner">
+            <div class="con">
+                <p class="txt" id="txt1">温馨提示：<br>
+下载登录后，在宝库>>好友验证中输入下面的邀请码，还会有惊喜哦！更多现金返利尽在今日超市特价，快
+来加入我们吧！</p>
+                <p class="code" id="code2">我的邀请码：12345677</p>
+                <a class="btn btn_down" id="btn2" href="share.html">下载今日超市特价</a>
+            </div>
+            <div class="bg" id="bg"></div>
+            
+   </div>   
+
+</div>
+<p class="code" id="code1">我的邀请码：12345677</p>
+<a class="btn btn_down" id="btn1" href="share.html">下载今日超市特价</a>
+<script type="text/javascript">
+(function(){
+    function $m(id){return document.getElementById(id)}
+    function style(id, options){
+        var dom = $m(id);
+        for(var i in options){
+            dom.style[i] = options[i];
+        }
+        return dom;
+    }
+    function setwidth(){
+        $m('code2').style.display = "none";
+        $m('btn2').style.display = "none";
+        style('btn1', {display:"block",
+            position:'fixed', bottom:"0.5rem", left:'50%', margin: "0 0 0 -2.8rem"
+        });
+        style('code1', {display:"block",
+            position:'fixed', bottom:"1.7rem",width:"100%"
+        });
+        document.body.style.overflow = "hidden";
+        $m("bg").style.height = window.innerHeight - 4.54*html_font_size + "px";
+    }
+    var h1 = $m('txt1').offsetHeight + (4.54+ 0.1)*html_font_size;
+    var h2 = 2*html_font_size +$m('code2').offsetHeight;
+    if(window.innerWidth<window.innerHeight&& (window.innerHeight-h1 > h2) ){
+        setwidth();
+    }
+})();
+
+</script>
+</body>
+</html>
